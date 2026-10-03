@@ -1,45 +1,42 @@
 # ✅ University Database - Verification
 
-Commands used to verify the schema structure, constraints, and data integrity.
+DESCRIBE department;
+DESCRIBE classroom;
+DESCRIBE time_slot;
+DESCRIBE course;
+DESCRIBE instructor;
+DESCRIBE student;
+DESCRIBE section;
+DESCRIBE teaches;
+DESCRIBE takes;
+DESCRIBE prereq;
+DESCRIBE advisor;
 
----
+SELECT TABLE_NAME, COLUMN_NAME, REFERENCED_TABLE_NAME, REFERENCED_COLUMN_NAME 
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE 
+WHERE REFERENCED_TABLE_SCHEMA = 'uni_db' AND REFERENCED_TABLE_NAME IS NOT NULL;SELECT * FROM department;
 
-## 🔍 Verify Table Relationships
-
-```sql
-SELECT TABLE_NAME, COLUMN_NAME, REFERENCED_TABLE_NAME, REFERENCED_COLUMN_NAME
-FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE REFERENCED_TABLE_SCHEMA = 'uni_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
-```
-
----
-
-## 📊 Verify Total Row Counts
-
-```sql
-SELECT 'department' AS Table_Name, COUNT(*) AS Total_Rows FROM department
-UNION ALL SELECT 'classroom', COUNT(*) FROM classroom
-UNION ALL SELECT 'time_slot', COUNT(*) FROM time_slot
-UNION ALL SELECT 'course', COUNT(*) FROM course
-UNION ALL SELECT 'instructor', COUNT(*) FROM instructor
-UNION ALL SELECT 'student', COUNT(*) FROM student
-UNION ALL SELECT 'prereq', COUNT(*) FROM prereq
-UNION ALL SELECT 'section', COUNT(*) FROM section
-UNION ALL SELECT 'teaches', COUNT(*) FROM teaches
-UNION ALL SELECT 'takes', COUNT(*) FROM takes
-UNION ALL SELECT 'advisor', COUNT(*) FROM advisor;
-```
-
----
-
-## 👁️‍🗨️ Verify Data Insertion
-
-```sql
-SELECT * FROM department;
+SELECT * FROM classroom;
+SELECT * FROM time_slot;
 SELECT * FROM course;
+SELECT * FROM instructor;
 SELECT * FROM student;
-```
+SELECT * FROM prereq;
+SELECT * FROM section;
+SELECT * FROM teaches;
+SELECT * FROM takes;
+SELECT * FROM advisor;
 
----
+SHOW CREATE TABLE department \G
+SHOW CREATE TABLE classroom \G
+SHOW CREATE TABLE time_slot \G
+SHOW CREATE TABLE course \G
+SHOW CREATE TABLE instructor \G
+SHOW CREATE TABLE student \G
+SHOW CREATE TABLE prereq \G
+SHOW CREATE TABLE section \G
+SHOW CREATE TABLE teaches \G
+SHOW CREATE TABLE takes \G
+SHOW CREATE TABLE advisor \G
 
-> **Author:** [AtiaAbk](https://github.com/AtiaAbk)
+
