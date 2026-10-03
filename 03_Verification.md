@@ -1,3 +1,5 @@
+# ✅ University Database - Verification
+
 DESCRIBE department;
 DESCRIBE classroom;
 DESCRIBE time_slot;
