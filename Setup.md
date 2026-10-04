@@ -1,10 +1,4 @@
-# 🏢 University Database - Schema Setup
-
-This section contains the structural setup of the University Database. All 11 tables are created here with their appropriate data types and constraints.
-
----
-
-## 🛠️ Create Database
+Create Database
 
 ```sql
 CREATE DATABASE uni_db;
