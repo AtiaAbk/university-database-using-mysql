@@ -1,10 +1,4 @@
-# 📥 University Database - Data Insertion
-
-This file contains the queries to insert sample records into the database. The tables are populated in a specific order to maintain Foreign Key integrity (parent tables first, then child tables).
-
----
-
-## 💾 Insert Queries
+Insert Queries
 
 ```sql
 INSERT INTO department (dept_name, building, budget) VALUES
