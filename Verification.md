@@ -1,4 +1,4 @@
-# ✅ University Database - Verification
+
 
 DESCRIBE department;
 DESCRIBE classroom;
