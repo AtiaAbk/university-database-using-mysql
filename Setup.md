@@ -7,7 +7,7 @@ USE uni_db;
 
 ---
 
-## 🏗️ Create Tables
+Create Tables
 
 ```sql
 CREATE TABLE department (
