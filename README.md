@@ -1,6 +1,5 @@
 # 🎓 University Database Using MySQL
 
-Welcome to the **University Database** project! This repository contains a structured, fully normalized relational database design for managing university data, built using **MySQL**.
 
 ---
 
