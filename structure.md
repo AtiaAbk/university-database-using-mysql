@@ -1,9 +1,6 @@
 # 🗂️ Database Structure & Entity Relationships
 
 
-
----
-
 ## 🏗️ Schema Overview
 
 | Table Name | Primary Key (PK) | Foreign Key (FK) -> References |
