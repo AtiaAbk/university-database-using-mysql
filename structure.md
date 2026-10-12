@@ -1,6 +1,6 @@
 # 🗂️ Database Structure & Entity Relationships
 
-This section defines the architecture of the 11 tables used in the database. It highlights the Primary Keys (PK) used for unique identification and the Foreign Keys (FK) used to establish relationships between tables.
+
 
 ---
 
